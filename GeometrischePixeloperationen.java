@@ -7,7 +7,7 @@ import java.util.Random;
  * @author S. Gebert
  * @version 06.2021
  */
-public class GeometrischeBildoperationen  implements Bildoperation
+public class GeometrischePixeloperationen  implements Bildoperation
 {
     private int opCount=5; //number of operations available
     // IDs der geometrischen Operationen
