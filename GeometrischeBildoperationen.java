@@ -125,6 +125,7 @@ public class GeometrischeBildoperationen  implements Bildoperation
             }
         }
         Picture neuesBild = originalBild.copy();
+        neuesBild.setDimensions(hoehe, breite);
         neuesBild.setPixelsArray(pixelNeu);
         return neuesBild;//@TODO: Kopiere Code aus einer der bereits implementierten Operationen und passe entprechend an.
         
