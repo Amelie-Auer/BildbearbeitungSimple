@@ -39,9 +39,9 @@ public class Mehrpixeloperationen  implements Bildoperation
                 double blau = 0.0;
                 for (int i=0; i<laenge; i++) {
                     for (int j=0; j<laenge; j++) {
-                        rot += filter[i][j] * pixel[xx+i][yy+i].getRed();
-                        gruen += filter[i][j] * pixel[xx+i][yy+i].getGreen();
-                        blau += filter[i][j] * pixel[xx+i][yy+i].getBlue();
+                        rot += filter[i][j] * pixel[xx+i][yy+j].getRed();
+                        gruen += filter[i][j] * pixel[xx+i][yy+j].getGreen();
+                        blau += filter[i][j] * pixel[xx+i][yy+j].getBlue();
                     }
                 }
                 if (rot < 0.0) rot = 0.0;
@@ -57,5 +57,6 @@ public class Mehrpixeloperationen  implements Bildoperation
         neuesBild.setPixelsArray(pixelNeu);
         return neuesBild;
     }
-
+    
+    
 }
